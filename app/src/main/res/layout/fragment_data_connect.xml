@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_titlebar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btn_data_connect"
+            android:layout_width="wrap_content"
+            android:text="数据连接  "
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:background="@null"
+            android:drawableRight="@mipmap/icon_network_close"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_disable_all"
+            android:layout_width="wrap_content"
+            android:text="禁用所有  "
+            android:textColor="@android:color/black"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:textSize="16sp"
+            android:drawableRight="@mipmap/icon_toggle_open"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/devider_line"
+        android:layout_height="8dp"></View>
+
+    <include layout="@layout/recyclerview"></include>
+</LinearLayout>

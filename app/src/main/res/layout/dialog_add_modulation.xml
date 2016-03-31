@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TimePicker>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:text="媒体音量"
+            android:checked="true"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:text="铃声音量"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+</LinearLayout>

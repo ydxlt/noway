@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cdcdcd" >
+    </View>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/devider_line"
+        android:padding="8dp" >
+
+        <RadioButton
+            android:id="@+id/btn_data_connection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:drawableTop="@mipmap/icon_data_connect_yellow"
+            android:gravity="center_horizontal"
+            android:text="@string/tab_data_connection"
+            android:textSize="12sp"
+            android:textColor="@color/yellow" />
+
+        <RadioButton
+            android:id="@+id/btn_modulation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:textSize="12sp"
+            android:drawableTop="@mipmap/icon_voice_yellow"
+            android:gravity="center_horizontal"
+            android:text="@string/tab_modulation"
+            android:textColor="@color/yellow" />
+
+        <RadioButton
+            android:id="@+id/btn_clock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:textSize="12sp"
+            android:drawableTop="@mipmap/icon_clock_yellow"
+            android:gravity="center_horizontal"
+            android:text="@string/tab_clock"
+            android:textColor="@color/yellow" />
+    </RadioGroup>
+
+</LinearLayout>
